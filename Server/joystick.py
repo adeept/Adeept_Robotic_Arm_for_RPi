@@ -1,11 +1,10 @@
-# Import required libraries: gpiozero replaces RPi.GPIO, retain PCF8591 ADC library and time
 import gpiozero
 import PCF8591 as ADC
 import time
 
 btn = gpiozero.Button(
-    17,  # BCM 17 = BOARD 11 (physical pin 11 on Raspberry Pi)
-    pull_up=True  # No need to specify BOARD factory, gpiozero defaults to BCM
+    17, 
+    pull_up=True  
 )
 
 STATE_LIST = ['home', 'down', 'up', 'left', 'right', 'pressed']

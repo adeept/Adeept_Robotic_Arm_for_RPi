@@ -29,9 +29,3 @@ if __name__ == "__main__":
     channel = 0
     while True:
         test(channel)
-
-'''
-
-'''
-
-#servo7.angle = 90

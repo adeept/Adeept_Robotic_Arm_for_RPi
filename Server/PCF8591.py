@@ -14,6 +14,7 @@ def setup(Addr):
 def read(chn):
     global address
     bus.write_byte(address, channels[chn])
+    bus.read_byte(address)
     return bus.read_byte(address)
 
 
